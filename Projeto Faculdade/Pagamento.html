@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-pagamento">
+        <h1>MY BIT</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Página Inicial</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="investir.html">Onde Investir</a></li>
+                <li><a href="indicacao.html">Indicação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container pagamento-container">
+        <h1 class="pagamento-title">Pagamento</h1>
+
+        <img src="Imagens/cartoes.jpg" class="pagamento-image" />
+
+        <form action="index.html">
+            <label for="numero" class="pagamento-label">Número do Cartão</label>
+            <input type="number" name="numero" class="pagamento-input pagamento-input-small" required>
+
+            <label for="nome" class="pagamento-label">Nome do Responsável</label>
+            <input type="text" name="nome" class="pagamento-input pagamento-input-small" required>
+
+            <label for="cvc" class="pagamento-label">CVC</label>
+            <input type="number" name="cvc" id="cvc" class="pagamento-input pagamento-input-small" required
+                maxlength="3">
+
+            <label for="val" class="pagamento-label">Val.Thru</label>
+            <input type="text" name="val" class="pagamento-input pagamento-input-small" required maxlength="4">
+
+            <label for="credito" class="pagamento-label">Forma de Pagamento:</label>
+            <select name="credito" class="pagamento-input">
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
+            </select>
+
+            <input type="submit" value="Enviar" class="pagamento-submit" />
+        </form>
+    </div>
+    <footer class="footer-pagamento">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: contato@mercadofinanceiro.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="homepage.html">Página Inicial</a></li>
+                    <li><a href="pagamento.html">Pagamento</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="investir.html">Onde Investir</a></li>
+                    <li><a href="indicacao.html">Indicação</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 MY BIT
+        </div>
+    </footer>
+</body>
+
+</html>

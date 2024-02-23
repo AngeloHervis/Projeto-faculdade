@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-cadastro">
+        <h1>MY BIT</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Página Inicial</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="investir.html">Onde Investir</a></li>
+                <li><a href="indicacao.html">Indicação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container cadastro-container">
+        <h1 class="cadastro-title">Cadastro</h1>
+
+        <img src="Imagens/bitcoin.jpg" class="cadastro-image" />
+
+        <form action="index.html">
+            <label for="nome" class="pagamento-label">Escreva seu nome completo:</label>
+            <input type="text" name="nome" class="pagamento-input pagamento-input-small" required>
+
+            <label for="celular" class="pagamento-label">Tel/Celular:</label>
+            <input type="text" name="celular" class="pagamento-input pagamento-input-small" required maxlength="11">
+
+            <label for="sexo" class="pagamento-label">Sexo:</label>
+            <select name="sexo" class="pagamento-input pagamento-input-small">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label for="email" class="pagamento-label">Seu email:</label>
+            <input type="email" name="email" class="pagamento-input pagamento-input-small" required>
+
+            <label for="cpf" class="pagamento-label">Seu CPF (sem pontos):</label>
+            <input type="text" name="cpf" class="pagamento-input pagamento-input-small" required maxlength="11">
+
+            <label for="data" class="pagamento-label">Data de Nascimento:</label>
+            <input type="date" name="data" class="pagamento-input pagamento-input-small">
+
+            <label for="endereco" class="pagamento-label">CEP:</label>
+            <input type="text" name="endereco" class="pagamento-input pagamento-input-small" required
+                pattern="\d{5}-?\d{3}" maxlength="8" />
+
+            <input type="submit" value="Enviar" class="pagamento-submit" />
+        </form>
+    </div>
+    <footer class="footer-cadastro">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: contato@mybit.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="homepage.html">Página Inicial</a></li>
+                    <li><a href="pagamento.html">Pagamento</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="investir.html">Onde Investir</a></li>
+                    <li><a href="indicacao.html">Indicação</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 MY BIT
+        </div>
+    </footer>
+</body>
+
+</html>
